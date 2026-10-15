@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://uu2ogim4hy2v"]
+
+[ext_resource type="Script" uid="uid://c2y253qvndhj6" path="res://scripts/dialogue_ui.gd" id="1_dwk8m"]
+[ext_resource type="Texture2D" uid="uid://wpkb6118a1vc" path="res://assets/ui/panel_dialogue.png" id="2_6q285"]
+
+[node name="DialogueUI" type="CanvasLayer" unique_id=2043758090]
+script = ExtResource("1_dwk8m")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1401287347]
+offset_right = 700.0
+offset_bottom = 85.0
+offset_transform_enabled = true
+offset_transform_position = Vector2(220, 520)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1831136496]
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="PanelContainer/VBoxContainer" unique_id=1070496816]
+position = Vector2(347.49997, 44.75)
+scale = Vector2(2.5420876, 0.79197085)
+texture = ExtResource("2_6q285")
+
+[node name="NameLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=2042122512]
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(15, 5)
+text = "Robbin Hood"
+
+[node name="DialogueLevel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1699181252]
+custom_maximum_size = Vector2(700, 100)
+layout_mode = 2
+offset_transform_enabled = true
+offset_transform_position = Vector2(15, 0)
+text = "Welcome Player! :D"
+autowrap_mode = 3
+
+[node name="ContinueButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1861213017]
+layout_mode = 2
+text = "Continue..."
